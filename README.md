@@ -1,7 +1,5 @@
 # pdf_translator_docker
-「Ubuntu + ROS2 」を含むDocker環境を提供します.  
-Provides a Docker environment including "Ubuntu + ROS2".
-
+[Index_PDF_Translation](https://github.com/Mega-Gorilla/Index_PDF_Translation.git)のためのDocker環境を提供します.  
 
 ## Prerequisites
 - docker installed. [How to Install(ubuntu20.04)](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04-ja)
