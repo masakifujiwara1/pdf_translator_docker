@@ -6,13 +6,24 @@
 - nvidia-smi must be available (When using gpu). [How to Install(ubuntu20.04)](https://takake-blog.com/ubuntu-2004-install-nvidiacontainertoolkit/)
 
 ## Quick Start
+### API Key Configuration
+pdf_translator_docker/config/config.pyを開き，以下のDeepL_API_Keyを変更し，https://www.deepl.com/ja/your-account/keysより取得したDeepL API Keyを入力してください．また，DeepL API Proユーザーの場合，DeepL_URLをProAPI用URLに変更し保存してください．
+```
+DeepL_API_Key = "xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxx:fx"
+```
+### Build
+```
+./build.sh
+```
+### Container launch
 Run the docker container. Add the `--rm` option depending on the situation.  
 ※ If you do not want to save your changes, it is recommended to use the `--rm` option.
 ```
 xhost +local:
 ./run.sh
+cd Index_PDF_Translation
+python manual_translate_pdf.py
 ```
-
 ## After the second
 launch (Rename containers as necessary)
 ```
