@@ -1,4 +1,4 @@
-# cudagl_docker
+# pdf_translator_docker
 「Ubuntu + ROS2 」を含むDocker環境を提供します.  
 Provides a Docker environment including "Ubuntu + ROS2".
 
@@ -27,7 +27,13 @@ launch (Rename containers as necessary)
 xhost +local:
 docker start my-<branch name>
 ```
-login
+loginecho "# pdf_translator_docker" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/masakifujiwara1/pdf_translator_docker.git
+git push -u origin main
 ```
 ./login.sh
 ```
@@ -80,4 +86,4 @@ BSD
 
 ## Tested on ...
 - ubuntu 20.04 LTS
-# pdf_translator_docker
+
